@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог | Scriptorium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style> -->
+    <style>
+        main {
+            background-color: #f9f9f9;
+        }
+        
+        section h2, section h3 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        section p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        article {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .image-container {
+            margin-bottom: 1.5rem;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            header .search {
+                flex-direction: column;
+            }
+        
+            header .search input, header .search button {
+                width: 100%;
+            }
+        
+            .promo h2 {
+                font-size: 28px;
+            }
+        
+            .promo p {
+                font-size: 16px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <header class="bg-light shadow-sm">
+            <div class="container-fluid text-center py-2 bg-secondary text-white small">
+                Отримуйте 150 бонусів за реєстрацію друга чи підписника!
+            </div>
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <a href="index.html" class="logo text-dark m-0 text-decoration-none">Scriptorium</a>
+                <nav class="navbar navbar-expand-md">
+                    <button class="navbar-toggler btn btn-outline-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+                        aria-label="Toggle navigation">☰</button>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a href="about.html" class="nav-link text-dark">Про нас</a></li>
+                            <li class="nav-item"><a href="collections.html" class="nav-link text-dark">Добірки</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link text-dark">Блог</a></li>
+                            <li class="nav-item"><a href="contacts.html" class="nav-link text-dark">Контакти</a></li>
+                            <li class="nav-item"><a href="promotions.html" class="nav-link text-dark">Акції</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="search d-flex align-items-center gap-2">
+                    <input type="text" class="form-control" placeholder="Що саме ви шукаєте?">
+                    <button class="btn btn-dark">🔍</button>
+                </div>
+                <div class="links-in-head">
+
+                    <div class="enter-in-account">
+                        <a href="#"> 
+                        <button type="button" class="btn btn-light" ><a href="login.html" class="nav-link text-dark">
+                        <i class="bi bi-person">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                          </svg>
+                         </i>
+                         <span>Вхід</span>
+                        </a>
+                        </button>
+                    </a>
+                    </div>
+                       
+                    <div class="favorite">
+                        <a href="#">
+                    <button type="button" class="btn btn-light"><i class="bi bi-heart"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg></i></button>
+                    </a>
+                   </div>
+    
+                  <div class="cart">
+                    <a href="#">
+                    <button type="button" class="btn btn-light"><i class="bi bi-cart2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg></i></button>
+                    </a>
+                    </div>
+    
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumb-container py-2 bg-light">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-dark">Головна</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Блог</li>
+                    </ol>
+                </nav>
+            </div>
+        </div> 
+        <main class="flex-grow-1">
+            <div class="container py-5">
+                <section class="text-center mb-5">
+                    <h2>Блог</h2>
+                    <p>Читайте новини та цікаві статті про книги.</p>
+                </section>
+                
+                <article class="mb-5">
+                    <h3>Нові надходження у нашому магазині</h3>
+                    <div class="image-container mb-4">
+                        <img src="img/blog-image1.jpg" alt="Нові книги" class="img-fluid">
+                    </div>
+                    <p>Ми раді оголосити про нові надходження! Цього місяця ми поповнили наші полиці кількома захопливими новими виданнями, які обов'язково сподобаються книголюбам. Класика, сучасні бестселери та рідкісні знахідки — знайдіть свою нову улюблену книгу у нас!</p>
+                </article>
+                
+                <article class="mb-5">
+                    <h3>Рекомендації на зимові вечори</h3>
+                    <div class="image-container mb-4">
+                        <img src="img/blog-image2.jpg" alt="Зимові рекомендації" class="img-fluid">
+                    </div>
+                    <p>Зимові вечори — це найкращий час для того, щоб поринути у світ літератури. Ми підготували добірку книг, які стануть ідеальним супутником в холодні дні. Від захопливих романів до глибоких філософських творів — знайдіть щось для душі!</p>
+                </article>
+
+                <article class="mb-5">
+                    <h3>Інтерв'ю з автором: Пилип Любченко</h3>
+                    <div class="image-container mb-4">
+                        <img src="img/blog-image3.jpg" alt="Інтерв'ю з автором" class="img-fluid">
+                    </div>
+                    <p>У нашому новому інтерв'ю ми поговорили з Пилипом Любченко, який поділився своїми думками про новий роман, що вийшов у світ. Не пропустіть — цікаві подробиці, ексклюзивні цитати та багато іншого чекає на вас у цій статті!</p>
+                </article>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white py-3 mt-auto">
+            <div class="container text-center">
+                <p class="m-0">© 2024 Scriptorium. Усі права захищені.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
